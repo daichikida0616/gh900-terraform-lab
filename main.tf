@@ -1,3 +1,3 @@
 locals {
-learning_goal="GitHub Actions"
+  learning_goal = "GitHub Actions"
 }
