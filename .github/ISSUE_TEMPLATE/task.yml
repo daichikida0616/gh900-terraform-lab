@@ -1,0 +1,33 @@
+name: 学習・作業タスク
+description: 実施したい作業を登録する
+title: "[Task] "
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: 目的
+      description: なぜこの作業を行いますか？
+      placeholder: Terraformの変更を自動チェックしたい
+    validations:
+      required: true
+
+  - type: textarea
+    id: tasks
+    attributes:
+      label: 作業内容
+      value: |
+        - [ ] 設定を追加する
+        - [ ] 動作を確認する
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 分類
+      options:
+        - Terraform
+        - GitHub
+        - ドキュメント
+    validations:
+      required: true
